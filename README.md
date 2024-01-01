@@ -1,3 +1,7 @@
 # product_frontend
 
-export REACT_APP_API_URL=https://backendapi.zee.im
+Modify the src/config.js file to assign the backend URL to the environment variable REACT_APP_API_URL.
+
+
+
+

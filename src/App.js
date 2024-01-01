@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {REACT_APP_API_URL}  from './config'
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -9,7 +10,7 @@ const App = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [editingId, setEditingId] = useState(null);
 
-  const apiUrl = process.env.REACT_APP_API_URL; // Accessing environment variable
+  const apiUrl = REACT_APP_API_URL; // Accessing environment variable
 
   const fetchProducts = async () => {
     try {
